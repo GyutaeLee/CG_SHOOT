@@ -19,8 +19,10 @@ public class RTSBoostrap
         m_EntityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
 
         PlayerUnitArchetype = m_EntityManager.CreateArchetype(
+            typeof(LocalToWorld),
+            typeof(RenderBounds),
+
             typeof(Translation),
-            typeof(Rotation),
             typeof(MoveSpeed),
             typeof(PlayerInput)
             );
@@ -42,8 +44,6 @@ public class RTSBoostrap
 
             m_EntityManager.SetComponentData(playerUnit, new Translation { Value = new float3(index * 5, 0.5f, 0) });
             m_EntityManager.AddSharedComponentData(playerUnit, m_CubeRenderer);
-
-            Debug.Log(playerUnit);
         }
     }
 
