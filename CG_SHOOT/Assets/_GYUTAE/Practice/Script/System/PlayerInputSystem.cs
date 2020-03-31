@@ -28,14 +28,14 @@ public class PlayerInputSystem : JobComponentSystem
 
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
-            mousePosition = new float3(hit.point.x, 0, hit.point.z);
+            mousePosition = new float3(hit.point.x, 1, hit.point.z);
         }
 
         var job = new PlayerInputJob
         {
             IsLeftClick = Input.GetMouseButtonDown(0),
             IsRightClick = Input.GetMouseButtonDown(1),
-            MousePosition = Input.mousePosition,
+            MousePosition = mousePosition,
         };
 
         return job.Schedule(this, inputDeps);
