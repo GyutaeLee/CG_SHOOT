@@ -12,12 +12,10 @@ GameObject:
   - component: {fileID: 5787509968906441732}
   - component: {fileID: 7027310710267986616}
   - component: {fileID: 663296882760218454}
-  - component: {fileID: 8390917357575654741}
-  - component: {fileID: 1405083892573967440}
-  - component: {fileID: 5596807231103621592}
-  - component: {fileID: -472122604694199104}
+  - component: {fileID: 8149732351225034063}
+  - component: {fileID: 4321710997816304055}
   m_Layer: 0
-  m_Name: PlayerUnitArchetype
+  m_Name: HighlightArchetype
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,8 +60,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SerializedData:
-    mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-    material: {fileID: 2100000, guid: 378960550558b8c4fa93b3e21d5aac30, type: 2}
+    mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+    material: {fileID: 2100000, guid: 3ee407759aa65c24b877b32a047128da, type: 2}
     subMesh: 0
     layer: 0
     castShadows: 0
@@ -86,7 +84,7 @@ MonoBehaviour:
       x: 0
       y: 0
       z: 0
---- !u!114 &8390917357575654741
+--- !u!114 &8149732351225034063
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,27 +93,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7406687694102325182}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f45258a2afd45afabd0d78ae4fcf414, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1405083892573967440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7406687694102325182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31e7ed065c51f1249a34f4e78ad0ab56, type: 3}
+  m_Script: {fileID: 11500000, guid: 1060dcfa4c8484da9a56580361de6f9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_SerializedData:
-    MousePosition:
+    Value:
       x: 0
       y: 0
       z: 0
---- !u!114 &5596807231103621592
+--- !u!114 &4321710997816304055
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,33 +110,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 7406687694102325182}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d6685fe8d53004b8e39f2dc99b8587, type: 3}
+  m_Script: {fileID: 11500000, guid: b3aa42658ebd061478fdd8d37d8a2b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SerializedData:
-    FinalDestination:
-      x: 0
-      y: 0
-      z: 0
-    AgentStatus: 0
---- !u!114 &-472122604694199104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7406687694102325182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baee22dea09c5254d974eeeaf0e337af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SerializedData:
-    Min:
-      x: 0
-      y: 0
-      z: 0
-    Max:
-      x: 0
-      y: 0
-      z: 0
